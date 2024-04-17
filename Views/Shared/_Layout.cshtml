@@ -1,13 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--
 
-    Template 2082 Pure Mix
-
-    http://www.tooplate.com/view/2082-pure-mix
-
-    -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -60,7 +54,7 @@
                     <div class="row">
 
                         <div class="brand">
-                            <a href="index.html"> <img src="images/logo-transparent-png.png" class="logo" alt="Logo" /> </a>
+                            <a href="Index.cshtml"> <img src="images/logo-transparent-png.png" class="logo"/> </a>
                         </div>
 
                         <div class="navicon">
@@ -215,11 +209,15 @@
             </div>
         </div>
     </section>
+
+    <!-- Render Body
+        =============================================== -->
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
+
     <!-- Footer section
     ================================================== -->
     <footer>
@@ -240,6 +238,8 @@
             </div>
         </div>
     </footer>
+
+
     <!-- Javascript
     ================================================== -->
     <script src="js/jquery.js"></script>
