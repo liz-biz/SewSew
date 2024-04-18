@@ -2,9 +2,9 @@
 
 namespace SewSew.Models
 {
-    public class Measurements
+    public class Measurement
     {
-        public int MeasurementsId { get; set; }
+        public int MeasurementId { get; set; }
         public double Bust {  get; set; }
         public double Waist { get; set; }
         public double Hips { get; set; }

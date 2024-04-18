@@ -2,9 +2,9 @@
 
 namespace SewSew.Models
 {
-    public class Appointments
+    public class Appointment
     {
-        public int AppointmentsId { get; set; }
+        public int AppointmentId { get; set; }
         public DateTime AppointmentDate { get; set; }
         public double AppointmentTime { get; set; }
         [ForeignKey("Client")]

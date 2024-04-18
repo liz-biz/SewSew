@@ -9,9 +9,9 @@ namespace SewSew.Models
         public string LastName { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        [ForeignKey("Measurements")]
-        public int MeasurementsId {  get; set; }
-        public Measurements measurements { get; set; }
-        public IEnumerable<Appointments> appointments { get; set; }
+        [ForeignKey("Measurement")]
+        public int MeasurementId {  get; set; }
+        public Measurement measurements { get; set; }
+        public IEnumerable<Appointment> appointments { get; set; }
     }
 }
