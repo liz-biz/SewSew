@@ -1,21 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-using SewSew.Data;
-using SewSew.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
-//Register Db context
-var connectionString = builder.Configuration.GetConnectionString("AppDbContextConnection");
-builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connectionString));
-
-//Register Services
-builder.Services.AddScoped<IClientRepository, ClientRepository>();
-builder.Services.AddScoped<IAppointmentRepository, AppointmentRepository>();
-builder.Services.AddScoped<IMeasurementRepository, MeasurementRepository>();
-
 
 var app = builder.Build();
 
