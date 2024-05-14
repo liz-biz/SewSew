@@ -2,7 +2,7 @@
 /* Body 
 ------------------------------------- */
 body {
-		background: #ffffff;
+	background: #ffffff;
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -70,7 +70,6 @@ a:focus {
   outline: 0;
   -webkit-transition: all 0.25s ease-out;
   -moz-transition: all 0.25s ease-out;
-  -ms-transition: all 0.25s ease-out;
   -o-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
@@ -79,50 +78,6 @@ img {
   width: 100%;
   max-width: 100%;
 }
-
-
-/* preloader styles
-/* ========================================== */
-.preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 99999;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    background: none repeat scroll 0 0 #fff;
-}
-
-.sk-spinner-pulse {
-  width: 60px;
-  height: 60px;
-  background-color: #111112;
-  border-radius: 100%;
-  -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
-          animation: sk-pulseScaleOut 1s infinite ease-in-out; }
-
-@-webkit-keyframes sk-pulseScaleOut {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0); }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 0; } }
-
-@keyframes sk-pulseScaleOut {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0); }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 0; } }
-
 
 
 /* navigation styles
@@ -388,7 +343,6 @@ a.icon {
 /* header section styles
 /* ========================================== */
 #header {
-  -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
   text-align: center;
@@ -695,13 +649,6 @@ a.icon {
   padding-right: 10px;
 }
 
-#contact #map-canvas  {
-  border: none;
-  width: 100%;
-  height: 300px;
-  margin-top: 40px;
-}
-
 #contact .contact-form {
   padding-top: 14px;
 }
@@ -743,13 +690,11 @@ a.icon {
 }
 
 #contact .col-md-4 {
-  background: #fff;
+  background: #fff; 
   padding: 62px 0px 32px 42px;
   position: relative;
-  bottom: -50px;
+  bottom: 50px;
 }
-
-
 
 /* footer section styles
 /* ========================================== */
@@ -805,10 +750,6 @@ footer {
 
   #contact .col-md-4 p {
     font-size: 12px;
-  }
-
-  #contact #map-canvas {
-    margin-bottom: 60px;
   }
 }
 
