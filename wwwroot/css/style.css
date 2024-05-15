@@ -18,7 +18,6 @@ html {
   font-size: 100%;
 }
 
-
 /* Typography
 ------------------------------------- */
 
@@ -698,10 +697,10 @@ a.icon {
 
 /* footer section styles
 /* ========================================== */
+
 footer {
   background: #141414;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 100px 0;
   text-align: center;
 }
 
