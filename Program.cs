@@ -7,7 +7,7 @@ var connectionString = builder.Configuration.GetConnectionString("SewSewDBContex
 
 builder.Services.AddDbContext<SewSewDBContext>(options => options.UseSqlServer(connectionString));
 
-builder.Services.AddDefaultIdentity<SewSewUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<SewSewDBContext>();
+builder.Services.AddDefaultIdentity<SewSewUser>(options => options.SignIn.RequireConfirmedAccount = false).AddEntityFrameworkStores<SewSewDBContext>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

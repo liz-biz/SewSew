@@ -78,7 +78,6 @@ img {
   max-width: 100%;
 }
 
-
 /* navigation styles
 /* ========================================== */
 .nav-container,
@@ -112,23 +111,6 @@ nav a {
   -moz-transition: all 0.3s ease;
 }
 
-.brand {
-  float: left;
-  padding: 30px 0 0;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.3rem;
-}
-.brand a {
-  color: #333;
-  font-size: 24px;
-  font-weight: 700;
-  opacity: 1;
-  text-decoration: none;
-}
-
 .navicon {  
   position: relative;
   right: 0;
@@ -140,14 +122,18 @@ nav a {
   justify-content: flex-end;
   padding: 20px 0 0;
 }
-
-nav ul {
-  display: inline-block;
-}
-
-nav ul.right {
-  float: right;
-  right: 0
+.home-navicon {
+    float: left;
+    position: relative;
+    right: 0;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding: 20px 0 0;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    color: #ffffff;
 }
 
 #nav-menu a {
@@ -247,13 +233,15 @@ a.icon {
 
 .circle i {
   font-size: 36px;
-  color: #111112;
+  color: #111112
+}
+.circle i.bi-person{
+   margin-right: 20px;
 }
 
 .circle.dark {
-  border-color: #292929;
+    border-color: #292929;
 }
-
 .circle.dark:before {
   border-color: transparent transparent transparent #292929;
 }

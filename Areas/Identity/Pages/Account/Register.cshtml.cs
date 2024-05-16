@@ -47,6 +47,16 @@ namespace SewSew.Areas.Identity.Pages.Account
         public class InputModel
         {
             [Required]
+            [DataType(DataType.Text)]
+            [Display(Name ="First Name")]
+            public string FirstName {  get; set; }
+
+            [Required]
+            [DataType(DataType.Text)]
+            [Display(Name = "Last Name")]
+            public string LastName { get; set; }
+
+            [Required]
             [EmailAddress]
             [Display(Name = "Email")]
             public string Email { get; set; }
@@ -76,7 +86,12 @@ namespace SewSew.Areas.Identity.Pages.Account
             if (ModelState.IsValid)
             {
                 var user = new SewSewUser { UserName = Input.Email, Email = Input.Email };
+
+                user.FirstName = Input.FirstName;
+                user.LastName = Input.LastName;
+
                 var result = await _userManager.CreateAsync(user, Input.Password);
+             
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
