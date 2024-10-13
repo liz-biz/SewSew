@@ -25,6 +25,7 @@
             <div class="navbar">
                 <div class="container">
                     <div class="row">
+
                         <div class="home-navicon"> 
                             <div class="menu-container">
                                 <div class="circle dark inline">
@@ -32,10 +33,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="navicon">
 
-                            <div class="menu-container">
-                                <div class="circle dark inline" >
+                        <div class="navicon">
+                            <div class="menu-container" id="person-icon">
+                                <div class="circle dark inline">
                                     <i class="bi bi-person"></i>
                                 </div>
                                 <div class="list-menu">
@@ -43,13 +44,14 @@
                                     <div class="intro-inner">
                                         <ul id="nav-menu">
                                             <li class="nav-item">
-                                                 <partial name="_LoginPartial.cshtml" />
+                                                <partial name="_LoginPartial.cshtml" />
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="menu-container">
+
+                            <div class="menu-container" id="list-icon">
                                 <div class="circle dark inline">
                                     <i class="bi bi-list"></i>
                                 </div>
@@ -69,8 +71,10 @@
                                         </ul>
                                     </div>
                                 </div>
-
                             </div>
+
+
+
                         </div>
 
                     </div>

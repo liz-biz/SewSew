@@ -133,7 +133,6 @@ nav a {
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
-    color: #ffffff;
 }
 
 #nav-menu a {
@@ -327,8 +326,7 @@ a.icon {
   cursor: pointer;
 }
 /* Login-Register pages 
-    ===========================================
-*/
+    =================================================== */
 .password-input-box {
     position: absolute;
     top: 50%;
@@ -344,7 +342,9 @@ a.icon {
 .input-wrapper {
     position: relative;
 }
-
+.nav-tabs .nav-link.active {
+    background-color: lightgray;
+}
 /* header section styles
 /* ========================================== */
 #header {

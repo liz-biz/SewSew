@@ -1,18 +1,22 @@
 ﻿@{
-    Layout = "/Views/Shared/_Layout.cshtml";
+    Layout = "/Views/Shared/_AuthOnlyLayout.cshtml";
 }
-<div class="container">
+@{
+    var isLoginPage = Context.Request.Path.Value.Contains("Login");
+    var isRegisterPage = Context.Request.Path.Value.Contains("Register");
+}
+<div id="auth-page"class="container">
     <div class="col-md-6" style="margin-left: 25%">
         <div class="card login-logout-card" style="width: 400px">
             <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
                     <li class="nav-item">
-                        <a class="nav-link" href="/Identity/Account/Login">
+                        <a class="nav-link @(isLoginPage ? "active" : "")" href="/Identity/Account/Login">
                             Log In
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Identity/Account/Register">
+                        <a class="nav-link @(isRegisterPage ? "active" : "")" href="/Identity/Account/Register">
                             Register
                         </a>
                     </li>
