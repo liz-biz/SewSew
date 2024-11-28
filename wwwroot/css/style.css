@@ -398,7 +398,7 @@ a.icon {
 
 /* Portfolio section styles
 /* ========================================== */
-#portfolio {
+/*#portfolio {
   text-align: center;
   padding-top: 3rem;
   padding-bottom: 6rem;
@@ -449,10 +449,10 @@ a.icon {
     text-align: center;
     text-decoration: none;
     margin-bottom: 4px;
-}
+}*/
 
 /*filter css*/
-.filter-wrapper {
+/*.filter-wrapper {
     width: 100%;
     margin-bottom: 32px;
     overflow: hidden;
@@ -483,10 +483,10 @@ a.icon {
 .filter-wrapper li a:focus {
   background: #111112;
   color: #ffffff;
-}
+}*/
 
 /*isotope box css*/
-.iso-box-section {
+/*.iso-box-section {
     width: 100%;
 }
 
@@ -515,11 +515,11 @@ a.icon {
 .fluid-img {
     width: 100%;
     display: block;
-}
+}*/
 
 /* single project section styles
 /* ========================================== */
-#single-project {
+/*#single-project {
   padding-top: 4rem;
   padding-bottom: 6rem;
 }
@@ -530,7 +530,7 @@ a.icon {
 
 #single-project img {
   padding-top: 14px;
-}
+}*/
 
 /* about section styles
 /* ========================================== */
@@ -555,7 +555,7 @@ a.icon {
 
 /* blog & single post section styles
 /* ========================================== */
-#blog, 
+/*#blog, 
 #single-post {
   padding-top: 4rem;
   padding-bottom: 6rem;
@@ -640,7 +640,7 @@ a.icon {
   color: #ffffff;
   height: 50px;
 }
-
+*/
 
 /* contact section styles
 /* ========================================== */
