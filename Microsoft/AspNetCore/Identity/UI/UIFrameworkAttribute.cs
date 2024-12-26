@@ -11,7 +11,7 @@
 
 namespace Microsoft.AspNetCore.Identity.UI
 {
-    internal class UIFrameworkAttribute : Attribute
+    internal class UIFrameworkAttribute(String str) : Attribute
     {
     }
 }
