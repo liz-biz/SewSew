@@ -641,7 +641,7 @@ footer {
     margin-bottom: 4px;
 }
 
-filter css
+/*filter css*/
 .filter-wrapper {
     width: 100%;
     margin-bottom: 32px;
@@ -675,7 +675,7 @@ filter css
   color: #ffffff;
 }
 
-isotope box css
+/*isotope box css*/
 .iso-box-section {
     width: 100%;
 }
@@ -708,7 +708,7 @@ isotope box css
 }
 
 /* single project section styles
- ========================================== */
+/* ========================================== */
 #single-project {
   padding-top: 4rem;
   padding-bottom: 6rem;
@@ -719,12 +719,33 @@ isotope box css
 }
 
 #single-project img {
-    padding-top: 14px;
+  padding-top: 14px;
 }
 
-/*blog & single post section styles*/
-/* ==========================================*/ 
-        #blog, 
+/* about section styles
+/* ========================================== */
+#about {
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+}
+
+#about .col-md-4 {
+  padding-top: 16px;
+  padding-bottom: 32px;
+}
+
+#about img {
+  padding-bottom: 20px;
+}
+
+#about blockquote {
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+/* blog & single post section styles
+/* ========================================== */
+#blog, 
 #single-post {
   padding-top: 4rem;
   padding-bottom: 6rem;
@@ -807,7 +828,15 @@ isotope box css
   background: #111112;
   border-color: transparent;
   color: #ffffff;
-  height: 50px;
+  height: 50px;
+}
 
+
+/* contact section styles
+/* ========================================== */
+#contact {
+  padding-top: 5rem;
+  padding-bottom: 0rem;
+}
 
 
