@@ -344,6 +344,7 @@ a.icon {
 .nav-tabs .nav-link.active {
     background-color: lightgray;
 }
+
 /* header section styles
 /* ========================================== */
 #header {
@@ -363,37 +364,33 @@ a.icon {
 .header-one .header-thumb,
 .header-two .header-thumb,
 .header-three .header-thumb,
-.header-four .header-thumb,
-.header-five .header-thumb {
+.header-four .header-thumb {
   padding: 32px 20px 32px 20px !important;
 }
 
 .header-one, .header-two,
-.header-three, .header-four,
-.header-five {
+.header-three, .header-four {
   height: 42vh !important;
   min-height: 420px;
   padding-top: 120px !important;
 }
 
 .header-one {
-  background: url('../images/header-bg.jpg') no-repeat;
+  background: url('../images/HomeBG.jpg') no-repeat;
   height: 60vh !important;
   min-height: 520px;
   padding-top: 150px !important;
 }
 .header-two {
-  background: url('../images/header-bg.jpg') no-repeat;
+  background: url('../images/HomeBG.jpg') no-repeat;
 }
 .header-three {
-  background: url('../images/header-three-bg.jpg') no-repeat;
+  background: url('../images/AboutBG.jpg') no-repeat;
 }
 .header-four {
-  background: url('../images/header-four-bg.jpg') no-repeat;
+  background: url('../images/ContactBG.jpg') no-repeat;
 }
-.header-five {
-  background: url('../images/header-five-bg.jpg') no-repeat;
-}
+
 
 
 /* about section styles
