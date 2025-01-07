@@ -347,6 +347,16 @@ a.icon {
 .nav-tabs .nav-link.active {
     background-color: lightgray;
 }
+.nav-tabs .nav-link {
+    color: black; 
+    background-color: transparent;
+    border-color: transparent;
+}
+.btn-light-gray {
+    background-color: #d6d6d6; 
+    color: #333;
+    border: 1px solid #ccc;
+}
 
 /* header section styles
 /* ========================================== */
