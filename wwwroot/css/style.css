@@ -1,4 +1,3 @@
-
 /* Body 
 ------------------------------------- */
 body {
@@ -7,11 +6,15 @@ body {
     font-style: normal;
     font-weight: 300;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 html,body {
   width: 100%;
   overflow-x: hidden;
+  height: 100%;
+  margin: 0;
 }
 
 html {
@@ -44,6 +47,9 @@ h3 {
   letter-spacing: 4px;
 }
 
+h4 {
+    font-size: 19px;
+}
 h5 {
   font-weight: 400;
   letter-spacing: 1px;
@@ -153,7 +159,7 @@ nav a {
 }
 
 .sticky .nav-text-light a {
-  color: #555555;
+    color: #555555;
 }
 
 .sticky nav.nav-inner .navbar {
@@ -345,6 +351,23 @@ a.icon {
 .nav-tabs .nav-link.active {
     background-color: lightgray;
 }
+.nav-tabs .nav-link {
+    color: black; 
+    background-color: transparent;
+    border-color: transparent;
+}
+.btn-light-gray {
+    background-color: #d6d6d6; 
+    color: #333;
+    border: 1px solid #ccc;
+}
+/*
+    Manage Account pages
+    ===============================================
+*/
+.manageHeader{
+    text-align: center;
+}
 /* header section styles
 /* ========================================== */
 #header {
@@ -364,173 +387,34 @@ a.icon {
 .header-one .header-thumb,
 .header-two .header-thumb,
 .header-three .header-thumb,
-.header-four .header-thumb,
-.header-five .header-thumb {
+.header-four .header-thumb {
   padding: 32px 20px 32px 20px !important;
 }
 
 .header-one, .header-two,
-.header-three, .header-four,
-.header-five {
+.header-three, .header-four {
   height: 42vh !important;
   min-height: 420px;
   padding-top: 120px !important;
 }
 
 .header-one {
-  background: url('../images/header-bg.jpg') no-repeat;
+  background: url('../images/HomeBG.jpg') no-repeat;
   height: 60vh !important;
   min-height: 520px;
   padding-top: 150px !important;
 }
 .header-two {
-  background: url('../images/header-bg.jpg') no-repeat;
+  background: url('../images/HomeBG.jpg') no-repeat;
 }
 .header-three {
-  background: url('../images/header-three-bg.jpg') no-repeat;
+  background: url('../images/AboutBG.jpg') no-repeat;
 }
 .header-four {
-  background: url('../images/header-four-bg.jpg') no-repeat;
-}
-.header-five {
-  background: url('../images/header-five-bg.jpg') no-repeat;
+  background: url('../images/ContactBG.jpg') no-repeat;
 }
 
-/* Portfolio section styles
-/* ========================================== */
-/*#portfolio {
-  text-align: center;
-  padding-top: 3rem;
-  padding-bottom: 6rem;
-}
 
-#portfolio img {
-  width: 100%;
-}
-
-#portfolio .portfolio-thumb {
-  position: relative;
-  overflow: hidden;
-  margin: 0;
-} 
-
-#portfolio .portfolio-thumb .portfolio-overlay {
-  background: #141414;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
-#portfolio .portfolio-thumb:hover .portfolio-overlay {
-  opacity: 0.9;
-}
-
-#portfolio .portfolio-thumb .portfolio-overlay .portfolio-item {
-    text-align: center;
-    padding: 30% 20px 20px;
-}
-
-#portfolio .portfolio-thumb .portfolio-overlay .fa {
-    background: #f9f9f9;
-    border-radius: 100px;
-    color: #141414;
-    font-size: 1.3rem;
-    display: inline-block;
-    width: 3.5rem;
-    height: 3.5rem;
-    line-height: 3.5rem;
-    text-align: center;
-    text-decoration: none;
-    margin-bottom: 4px;
-}*/
-
-/*filter css*/
-/*.filter-wrapper {
-    width: 100%;
-    margin-bottom: 32px;
-    overflow: hidden;
-}
-
-.filter-wrapper li {
-    display: inline-block;
-    margin: 4px;
-}
-
-.filter-wrapper li a {
-    color: #666;
-    font-size: 13px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    padding: 8px 17px;
-    margin-right: 2px;
-    margin-left: 2px;
-    text-transform: uppercase;
-    display: block;
-    text-decoration: none;
-    transition: all 0.4s ease-in-out;
-}
-.filter-wrapper li a:active {
-  background: #111112 !important;
-}
-.filter-wrapper li a:hover,
-.filter-wrapper li a:focus {
-  background: #111112;
-  color: #ffffff;
-}*/
-
-/*isotope box css*/
-/*.iso-box-section {
-    width: 100%;
-}
-
-.iso-box-wrapper {
-    width: 100%;
-    padding: 0;
-    clear: both;
-    position: relative;
-}
-
-.iso-box {
-    position: relative;
-    min-height: 50px;
-    float: left;
-    overflow: hidden;
-    margin-bottom: 25px;
-}
-
-.iso-box > a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-} 
-
-.fluid-img {
-    width: 100%;
-    display: block;
-}*/
-
-/* single project section styles
-/* ========================================== */
-/*#single-project {
-  padding-top: 4rem;
-  padding-bottom: 6rem;
-}
-
-#single-project .project-info {
-  padding-bottom: 10px;
-}
-
-#single-project img {
-  padding-top: 14px;
-}*/
 
 /* about section styles
 /* ========================================== */
@@ -552,95 +436,6 @@ a.icon {
   letter-spacing: 2px;
   margin-top: 20px;
 }
-
-/* blog & single post section styles
-/* ========================================== */
-/*#blog, 
-#single-post {
-  padding-top: 4rem;
-  padding-bottom: 6rem;
-}
-
-#blog .blog-thumb {
-  padding-top: 60px;
-  padding-bottom: 40px;
-}
-
-#blog .post-format,
-#single-post .post-format {
-  padding-bottom: 10px;
-}
-
-#blog .post-format span,
-#single-post .post-format span {
-  color: #888;
-  font-weight: 400;
-  letter-spacing: 1px;
-  padding-right: 10px;
-}
-
-#blog .blog-thumb .btn {
-  border-radius: 0px;
-  padding: 10px 32px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-top: 22px;
-  transition: all 0.4s ease-in-out;
-}
-#blog .blog-thumb .btn:hover {
-  background: #111112;
-  border-color: transparent;
-  color: #ffffff;
-}
-
-#single-post blockquote {
-  margin-top: 32px;
-  letter-spacing: 2px;
-}
-
-.post-image {
-	margin: 25px 0px;
-}
-
-#single-post .blog-comment,
-#single-post .blog-comment-form {
-  margin-top: 62px;
-}
-
-#single-post .blog-comment h3,
-#single-post .blog-comment-form h3 {
-  padding-bottom: 20px;
-}
-
-#single-post .blog-comment .media {
-  padding-bottom: 22px;
-}
-
-#single-post .blog-comment .media img {
-  padding-right: 14px;
-}
-
-#single-post .blog-comment h4 {
-  font-weight: 700;
-}
-
-#single-post .blog-comment-form .form-control {
-  background: transparent;
-  border: 1px solid #eee;
-  border-radius: 0px;
-  box-shadow: none;
-  font-size: 16px;
-  margin-bottom: 16px;
-  transition: all 0.4s ease-in-out;
-}
-
-#single-post .blog-comment-form input[type="submit"] {
-  background: #111112;
-  border-color: transparent;
-  color: #ffffff;
-  height: 50px;
-}
-*/
 
 /* contact section styles
 /* ========================================== */
@@ -708,6 +503,7 @@ footer {
   background: #141414;
   padding: 100px 0;
   text-align: center;
+  margin-top: auto;
 }
 
 
