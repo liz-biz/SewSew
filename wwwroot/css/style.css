@@ -6,11 +6,15 @@ body {
     font-style: normal;
     font-weight: 300;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 html,body {
   width: 100%;
   overflow-x: hidden;
+  height: 100%;
+  margin: 0;
 }
 
 html {
@@ -357,7 +361,13 @@ a.icon {
     color: #333;
     border: 1px solid #ccc;
 }
-
+/*
+    Manage Account pages
+    ===============================================
+*/
+.manageHeader{
+    text-align: center;
+}
 /* header section styles
 /* ========================================== */
 #header {
@@ -493,6 +503,7 @@ footer {
   background: #141414;
   padding: 100px 0;
   text-align: center;
+  margin-top: auto;
 }
 
 
