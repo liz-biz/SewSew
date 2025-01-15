@@ -1,15 +1,18 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using SewSew.Areas.Identity.Data;
+using SewSew.Areas.Identity.Roles;
 using SewSew.Data;
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("SewSewDBContextConnection") ?? throw new InvalidOperationException("Connection string 'SewSewDBContextConnection' not found.");
 
-builder.Services.AddDbContext<SewSewDBContext>(options => options.UseSqlServer(connectionString));
+//services
+var serviceProvider = builder.Services.BuildServiceProvider();
+await RoleInitializer.InitializeAsync(serviceProvider);
 
+builder.Services.AddDbContext<SewSewDBContext>(options => options.UseSqlServer(connectionString));
 builder.Services.AddDefaultIdentity<SewSewUser>(options => options.SignIn.RequireConfirmedAccount = false).AddEntityFrameworkStores<SewSewDBContext>();
 
-// Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
